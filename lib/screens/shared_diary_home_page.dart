@@ -15,10 +15,7 @@ class SharedDiaryHomePage extends StatelessWidget {
           IconButton(
             icon: const Icon(Icons.add_comment_rounded),
             onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (_) => const DiaryWritePage()),
-              );
+              Navigator.pushNamed(context, '/write');
             },
           ),
         ],
